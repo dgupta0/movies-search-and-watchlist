@@ -1,0 +1,183 @@
+body,
+html {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: aliceblue;
+}
+
+header {
+    margin-top: 0;
+    height: 250px;
+    background-image: url("images/feature.png");
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header>h1 {
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+header>a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.75rem;
+
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+    width: fit-content;
+    border: 1px solid rgb(225, 225, 225);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+}
+
+#search-text {
+    width: 60%;
+    height: 40px;
+    border: none;
+    font-size: 1rem;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+
+#search-container button {
+    width: 40%;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    min-width: 80px;
+}
+
+main {
+    color: rgb(41, 40, 40);
+}
+
+.temp-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 175px;
+}
+
+.temp-div img {
+    width: 75px;
+    filter: invert(75%);
+}
+
+.temp-div h2,
+.add-movies a {
+    color: rgb(92, 92, 92);
+    text-align: center;
+}
+
+.add-movies img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+    filter: invert(5%);
+}
+
+.add-movies a {
+    text-decoration: none;
+    display: flex;
+}
+
+.movie-information,
+.info-one,
+.info-two {
+    display: flex;
+    font-size: 0.9rem;
+
+}
+
+.info-one {
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.info-one h2,
+.info-one p {
+    padding: 0.25em;
+    margin: 0;
+
+}
+
+.info-two p {
+    padding: 0.35em;
+}
+
+.movie-information {
+    width: 95%;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(66, 66, 66);
+    margin: 0 auto 0 auto;
+    max-width: 600px;
+    padding: 3em 0;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.movie-information img {
+    width: 33%;
+    object-fit: cover;
+}
+
+.basic-info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.watchlist {
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.watchlist:hover,
+.watchlist:focus {
+    transform: scale(1.1)
+}
+
+.watch {
+    font-weight: bolder;
+    font-size: 0.85rem;
+    margin-left: 0.15em;
+    cursor: pointer;
+}
+
+@media(max-width: 550px) {
+    header>h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    header>a {
+        font-size: 5vw;
+    }
+
+    .info-one {
+        font-size: 3vw;
+    }
+}
