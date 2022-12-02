@@ -4,6 +4,7 @@ We also had to build the watchlist page, where we added the movies there. Movies
 Following were the design specs- https://www.figma.com/file/jhFRdFIdHpRxsDznNXtpXw/Movie-Watchlist?node-id=2%3A17&t=NoulranwOIxkGxcY-0
 
 ## Functionalities-
+Used omdb api to get the movie data. <br/>
 Search a movie title and list of movies matches the title is populated for the user. <br/>
 Select and add a movie to the watchlist page using local storage. <br/>
 If title is not found then a message to search for different query is displayed <br/>
