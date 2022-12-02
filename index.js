@@ -79,7 +79,7 @@ function addEventListeners() {
 }
 
 function addToWatchList(id) {
-    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=39faa863&t=${id}`)
+    fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=39faa863&t=${id}`)
         .then(res => res.json())
         .then(data => {
             console.log(data)
